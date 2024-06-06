@@ -14,14 +14,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* Sử dụng gradient để tạo hiệu ứng màu radian */
+  background: radial-gradient(circle, #282c34, #61dafb);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,4 +36,69 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  /* Chuyển sang xếp cột */
+  background: radial-gradient(circle, #282c34, #61dafb);
+  /* Sử dụng gradient để tạo hiệu ứng màu radian */
+  min-height: 100vh;
+  /* Đảm bảo chiều cao tối thiểu bằng chiều cao của viewport */
+  justify-content: center;
+  /* Canh giữa nội dung */
+}
+
+.image {
+  width: 400px;
+  /* Thiết lập kích thước cố định cho hình ảnh */
+  height: 600px;
+  /* Đảm bảo tỷ lệ khung hình không bị biến đổi */
+  margin-bottom: 10px;
+  /* Khoảng cách giữa hình ảnh và dropdown */
+}
+
+/* CSS cho dropdown select */
+.select {
+  -webkit-appearance: none;
+  /* Loại bỏ giao diện mặc định của select */
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 20px;
+  /* Tùy chỉnh lề và kích thước */
+  border: 1px solid #ccc;
+  /* Đường viền */
+  border-radius: 5px;
+  /* Bo tròn các góc */
+  background-color: #fff;
+  /* Màu nền */
+  font-size: 16px;
+  /* Kích thước chữ */
+  color: #333;
+  /* Màu chữ */
+  cursor: pointer;
+  /* Con trỏ chuột khi di chuyển vào */
+}
+
+/* CSS cho dropdown select khi được hover */
+.select:hover {
+  border-color: #999;
+  /* Đổi màu đường viền khi hover */
+}
+
+/* CSS cho dropdown select khi được focus */
+.select:focus {
+  outline: none;
+  /* Loại bỏ đường viền khi focus */
+  border-color: #666;
+  /* Đổi màu đường viền khi focus */
+}
+
+/* CSS cho dropdown select khi được nhấn */
+.select:active {
+  border-color: #555;
+  /* Đổi màu đường viền khi nhấn */
 }
